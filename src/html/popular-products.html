@@ -1,0 +1,25 @@
+<section class="products __popular">
+    <div class="container">
+        <div class="products__body">
+            @@include("../html/products__block.html", {})
+            <div class="products__container">
+                <div class="products__wrapper swiper-wrapper">
+                    @@include("../html/product__column.html", { title: "Водонепроницаемый Рюкзак", price: "9 800", image: "pop-1", class: "swiper-slide __cart" })
+
+                    @@include("../html/product__column.html", { title: "Спасательный жилет BRP Men's Airflow PFD", price: "6 900", image: "pop-2", class: "swiper-slide __cart", })
+
+                    @@include("../html/product__column.html", { title: "BRP Audio-Premium System", price: "68 000", image: "pop-3", class: "swiper-slide __cart", })
+
+                    @@include("../html/product__column.html", { title: "Спасательное снаряжение", price: "68 000", image: "pop-4", class: "swiper-slide not-available", })
+
+                    @@include("../html/product__column.html", { title: "BRP Audio-Premium System", price: "68 000", image: "pop-3", class: "swiper-slide", })
+
+                    @@include("../html/product__column.html", { title: "BRP Audio-Premium System", price: "68 000", image: "pop-3", class: "swiper-slide", })
+                </div>
+                <div class="show-more">Показать еще</div>
+            </div>
+            <div class="swiper-button-prev __popular"></div>
+            <div class="swiper-button-next __popular"></div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,50 @@
+.products {
+    &.__popular {
+        width: 100%;
+    }
+}
+
+.products__container {
+    overflow: hidden;
+}
+
+.show-more {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    color: $textColor;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.swiper-button-prev.__popular {
+    width: 15px;
+    height: 28px;
+    // left: -30px;
+    margin: 0;
+    color: $textColor;
+
+    &::after {
+        font-size: 28px;
+    }
+}
+
+.swiper-button-next.__popular {
+    width: 15px;
+    height: 28px;
+    // right: -30px;
+    margin: 0;
+    color: $textColor;
+
+    &::after {
+        font-size: 28px;
+    }
+}

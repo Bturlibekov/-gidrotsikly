@@ -1,0 +1,31 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+body {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: SFProDisplay;
+    background-color: $background;
+
+    // &.__block {
+    //     overflow: hidden;
+    // }
+}
+
+.main__page {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.h-50 {
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+@import "./scroll";

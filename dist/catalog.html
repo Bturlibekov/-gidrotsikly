@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__top">
+        <div class="header__top-logo"></div>
+        <div class="header__top-menu">
+            <a href="#">Магазины</a>
+            <a href="#">Акции</a>
+            <a href="#">Доставка и оплата</a>
+        </div>
+        <div class="header__address">
+            <span class="icon-map"></span>
+            <strong>Москва, ул. Науки 25</strong>
+        </div>
+        <div class="header__links">
+            <a href="#" class="header__links-favorites icon-heart-light"></a>
+            <a href="#" class="header__links-user icon-user"></a>
+            <a href="#" class="header__links-cart icon-cart"></a>
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <nav class="header__menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="#" class="menu__link">Квадроциклы</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Катера</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Гидроциклы</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Лодки</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Вездеходы</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Снегоходы</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Двигатели</a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">Запчасти</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main__page">
+        <section class="hydrocycle">
+    <div class="container">
+        <div class="hydrocycle__header">
+            <div class="hydrocycle__title">Гидроциклы</div>
+            <div class="hydrocycle__item">
+                <div class="hydrocycle__item-list">
+                    <div class="hydrocycle__list-item">Полноприводные</div>
+                    <div class="hydrocycle__list-item">от 5000</div>
+                    <div class="hydrocycle__list-item">BRP</div>
+                    <div class="hydrocycle__list-item">еще</div>
+                </div>
+                <div class="hydrocycle__filter">
+                    <select name="" id="">
+                        <option value="">По полулярности</option>
+                        <option value="">По дате</option>
+                    </select>
+                    <button class="icon-filter __active"></button>
+                    <button class="icon-filter-bar"></button>
+                </div>
+            </div>
+        </div>
+        <div class="hydrocycle__body">
+            <div class="hydrocycle__body-list">
+                <div class="hydrocycle__filter-tabs">
+                    <div class="hydrocycle__tabs-item __active">Параметры</div>
+                    <div class="hydrocycle__tabs-item">по марке</div>
+                </div>
+                <div class="hydrocycle__filter-type">
+                    <div class="hydcrocycle__type-block __radio">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Наличие</div>
+                        <div class="hydrocycle__type-row __radio">
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="all">
+                                    <input class="radio-input" type="radio" name="view" id="all" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Все</p>
+                            </div>
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="new">
+                                    <input class="radio-input" type="radio" name="view" id="new" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Новинки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __radio">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Новинки</div>
+                        <div class="hydrocycle__type-row __radio">
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="newAll">
+                                    <input class="radio-input" type="radio" name="view2" id="newAll" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Все</p>
+                            </div>
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="newNew">
+                                    <input class="radio-input" type="radio" name="view2" id="newNew" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Новинки</p>
+                            </div>
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="newStock">
+                                    <input class="radio-input" type="radio" name="view2" id="newStock" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Акции</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="hydcrocycle__type-block">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Цена</div>
+                        <div class="hydrocycle__type-row __range">
+                            <div class="filters">
+    <div class="filters__item filters-price">
+        <div class="filters-price__slider" id="range-slider"></div>
+        <div class="filters-price__inputs">
+            <label class="filters-price__label">
+                <span class="filters-price__text">от</span>
+                <input type="number" min="100000" max="500 000" placeholder="100 000" class="filters-price__input" id="input-0">
+            </label>
+            <label class="filters-price__label">
+                <span class="filters-price__text">до</span>
+                <input type="number" min="100000" max="500 000" placeholder="500 000" class="filters-price__input" id="input-1">
+            </label>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div> -->
+                    <div class="hydcrocycle__type-block __select">
+                        <div class="hydrocycle__type-row __select">
+                            <div class="hydrocycle__type-title">Мощность, л.с.</div>
+                            <select name="" id="">
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __select">
+                        <div class="hydrocycle__type-row __select">
+                            <div class="hydrocycle__type-title">Мощность двигателя, л.с.</div>
+                            <select name="" id="">
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __select">
+                        <div class="hydrocycle__type-row __select">
+                            <div class="hydrocycle__type-title">Макс. скорость</div>
+                            <select name="" id="">
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __checkbox">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Бренд</div>
+                        <div class="hydrocycle__type-row">
+                            <div class="hydrocycle__type-column __checkbox">
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-1" />
+                                    <label class="checkbox-label" for="checkbox-1"></label>
+                                    <p>BRP</p>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-2" />
+                                    <label class="checkbox-label" for="checkbox-2"></label>
+                                    <p>Spark 2</p>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-3" />
+                                    <label class="checkbox-label" for="checkbox-3"></label>
+                                    <p>Spark 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="hydcrocycle__type-more">Показать еще</button>
+                    </div>
+                    <div class="hydcrocycle__type-block __checkbox">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Модель</div>
+                        <div class="hydrocycle__type-column __checkbox">
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-4" />
+                                <label class="checkbox-label" for="checkbox-4"></label>
+                                <p>Sea-doo Spark 2</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-5" />
+                                <label class="checkbox-label" for="checkbox-5"></label>
+                                <p>SeaDoo Spark 90</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-6" />
+                                <label class="checkbox-label" for="checkbox-6"></label>
+                                <p>SeaDoo GTI 155</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-7" />
+                                <label class="checkbox-label" for="checkbox-7"></label>
+                                <p>SeaDoo GTR 230</p>
+                            </div>
+                        </div>
+                        <button class="hydcrocycle__type-more">Показать еще</button>
+                    </div>
+                    <div class="hydcrocycle__type-block __btns">
+                        <div class="hydrocycle__type-row __btns">
+                            <div class="hydrocycle__type-title">Акции</div>
+                            <div class="hydrocycle__type-column __btns">
+                                <span class="hydrocycle__btn __sale">sale</span>
+                                <span class="hydrocycle__btn __new">NEW</span>
+                                <span class="hydrocycle__btn __hit">HIT</span>
+                                <span class="hydrocycle__btn __diler">ДИЛЕР</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __checkbox">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Страны</div>
+                        <div class="hydrocycle__type-column __checkbox">
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-russia" />
+                                <label class="checkbox-label" for="checkbox-russia"></label>
+                                <p>Россия</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-germany" />
+                                <label class="checkbox-label" for="checkbox-germany"></label>
+                                <p>Германия</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-china" />
+                                <label class="checkbox-label" for="checkbox-china"></label>
+                                <p>Китай</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-usa" />
+                                <label class="checkbox-label" for="checkbox-usa"></label>
+                                <p>CША</p>
+                            </div>
+                        </div>
+                        <button class="hydcrocycle__type-more">Показать еще</button>
+                    </div>
+                    <div class="hydcrocycle__item">
+                        <div class="hydcrocycle__choose">
+                            <button>выбрать</button>
+                        </div>
+                        <div class="hydcrocycle__options">
+                            <button>Дополнительные параметры<i class="fa fa-chevron-down"></i></button>
+                        </div>
+                        <div class="hydcrocycle__reset">
+                            <button>Сбросить фильтр</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hydrocycle__products-block">
+                <div class="hydrocycle__products">
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                    <div class="products__slide @@class">
+    <div class="products__slide-img">
+        <img src="img/gid-1.png">
+        <div class="products__slide-view"><a href="#">Посмотреть товар</a></div>
+    </div>
+    <div class="products__slide-title">Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango</div>
+    <div class="products__slide-price">1 049 500 ₽</div>
+    <div class="products__slide-cart"><a href="#" class="icon-cart"></a></div>
+    <div class="products__slide-sale"><span>sale</span></div>
+    <div class="products__slide-favorites"><span class="icon-heart-light"></span></div>
+    <div class="products__slide-not">нет в наличии</div>
+    <div class="products__slide-notification"><a href="#">Сообщить о поступлении</a></div>
+</div>
+                </div>
+                <div class="products__pages">
+                    <span class="__current">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>...</span>
+                    <span>11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__notification">
+                <div class="footer__notification-title footer__title">Подпишитесь на нашу рассылку и узнавайте о акция
+                    быстрее</div>
+                <div class="footer__notification-block">
+                    <input type="text" class="footer__notification-input" placeholder="Введите ваш e-mail:">
+                    <button class="footer__notification-submit">Отправить</button>
+                </div>
+            </div>
+            <div class="footer__list">
+                <div class="footer__list-title footer__title">Информация</div>
+                <a href="#" class="footer__link">О компании</a>
+                <a href="#" class="footer__link">Контакты</a>
+                <a href="#" class="footer__link">Акции</a>
+                <a href="#" class="footer__link">Магазины</a>
+            </div>
+            <div class="footer__list">
+                <div class="footer__list-title footer__title">Интернет-магазин</div>
+                <a href="#" class="footer__link">Доставка и самовывоз</a>
+                <a href="#" class="footer__link">Оплата</a>
+                <a href="#" class="footer__link">Возврат-обмен</a>
+                <a href="#" class="footer__link">Новости</a>
+            </div>
+            <div class="footer__contacts">
+                <a href="#" class="icon-instagram"></a>
+                <a href="#" class="icon-vk"></a>
+                <a href="#" class="icon-facebook"></a>
+                <a href="#" class="icon-youtube"></a>
+            </div>
+        </div>
+        <div class="footer__end">
+            <a href="#">Договор оферты</a>
+            <a href="#">Политика обработки персональных данных</a>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>

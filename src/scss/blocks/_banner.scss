@@ -1,0 +1,122 @@
+.banner {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.banner__body {
+    position: relative;
+    background-color: $textHover;
+}
+
+.banner__inner {
+    max-width: 976px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.banner__inner-img {
+    display: flex;
+    margin-right: 46px;
+}
+
+.banner__inner-text {
+    max-width: 308px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-right: 11px;
+    color: #fff;
+}
+
+.banner__inner-link {
+    width: 284px;
+    height: 57px;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: $textColor;
+    background-color: $white;
+
+    &:hover {
+        color: $textHover;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .banner__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner__inner-img {
+        margin: 0;
+    }
+
+    .banner__inner-text {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .banner__inner-link {
+        width: 220px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .banner__inner {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 10px;
+    }
+
+    .banner__inner-img img:last-child {
+        display: none;
+    }
+
+    .banner__inner-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .banner__inner-link {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 580px) {
+    .banner__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__inner-img {
+        img {
+            position: absolute;
+            width: 70px;
+            height: 48px;
+
+            &:first-child {
+                bottom: 0;
+                left: 0;
+            }
+
+            &:last-child {
+                bottom: 0;
+                right: 0;
+            }
+
+            &:last-child {
+                display: block;
+            }
+        }
+    }
+}

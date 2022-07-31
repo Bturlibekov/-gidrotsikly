@@ -1,0 +1,254 @@
+<section class="hydrocycle">
+    <div class="container">
+        <div class="hydrocycle__header">
+            <div class="hydrocycle__title">Гидроциклы</div>
+            <div class="hydrocycle__item">
+                <div class="hydrocycle__item-list">
+                    <div class="hydrocycle__list-item">Полноприводные</div>
+                    <div class="hydrocycle__list-item">от 5000</div>
+                    <div class="hydrocycle__list-item">BRP</div>
+                    <div class="hydrocycle__list-item">еще</div>
+                </div>
+                <div class="hydrocycle__filter">
+                    <select name="" id="">
+                        <option value="">По полулярности</option>
+                        <option value="">По дате</option>
+                    </select>
+                    <button class="icon-filter __active"></button>
+                    <button class="icon-filter-bar"></button>
+                </div>
+            </div>
+        </div>
+        <div class="hydrocycle__body">
+            <div class="hydrocycle__body-list">
+                <div class="hydrocycle__filter-tabs">
+                    <div class="hydrocycle__tabs-item __active">Параметры</div>
+                    <div class="hydrocycle__tabs-item">по марке</div>
+                </div>
+                <div class="hydrocycle__filter-type">
+                    <div class="hydcrocycle__type-block __radio">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Наличие</div>
+                        <div class="hydrocycle__type-row __radio">
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="all">
+                                    <input class="radio-input" type="radio" name="view" id="all" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Все</p>
+                            </div>
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="new">
+                                    <input class="radio-input" type="radio" name="view" id="new" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Новинки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __radio">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Новинки</div>
+                        <div class="hydrocycle__type-row __radio">
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="newAll">
+                                    <input class="radio-input" type="radio" name="view2" id="newAll" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Все</p>
+                            </div>
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="newNew">
+                                    <input class="radio-input" type="radio" name="view2" id="newNew" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Новинки</p>
+                            </div>
+                            <div class="hydrocycle__type-column">
+                                <label class="radio-label" for="newStock">
+                                    <input class="radio-input" type="radio" name="view2" id="newStock" />
+                                    <span class="ball"></span>
+                                </label>
+                                <p>Акции</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="hydcrocycle__type-block">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Цена</div>
+                        <div class="hydrocycle__type-row __range">
+                            @@include("../html/range__slider.html", {})
+                        </div>
+                    </div> -->
+                    <div class="hydcrocycle__type-block __select">
+                        <div class="hydrocycle__type-row __select">
+                            <div class="hydrocycle__type-title">Мощность, л.с.</div>
+                            <select name="" id="">
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __select">
+                        <div class="hydrocycle__type-row __select">
+                            <div class="hydrocycle__type-title">Мощность двигателя, л.с.</div>
+                            <select name="" id="">
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __select">
+                        <div class="hydrocycle__type-row __select">
+                            <div class="hydrocycle__type-title">Макс. скорость</div>
+                            <select name="" id="">
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                                <option value="">90</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __checkbox">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Бренд</div>
+                        <div class="hydrocycle__type-row">
+                            <div class="hydrocycle__type-column __checkbox">
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-1" />
+                                    <label class="checkbox-label" for="checkbox-1"></label>
+                                    <p>BRP</p>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-2" />
+                                    <label class="checkbox-label" for="checkbox-2"></label>
+                                    <p>Spark 2</p>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="checkbox-input" type="checkbox" id="checkbox-3" />
+                                    <label class="checkbox-label" for="checkbox-3"></label>
+                                    <p>Spark 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="hydcrocycle__type-more">Показать еще</button>
+                    </div>
+                    <div class="hydcrocycle__type-block __checkbox">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Модель</div>
+                        <div class="hydrocycle__type-column __checkbox">
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-4" />
+                                <label class="checkbox-label" for="checkbox-4"></label>
+                                <p>Sea-doo Spark 2</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-5" />
+                                <label class="checkbox-label" for="checkbox-5"></label>
+                                <p>SeaDoo Spark 90</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-6" />
+                                <label class="checkbox-label" for="checkbox-6"></label>
+                                <p>SeaDoo GTI 155</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-7" />
+                                <label class="checkbox-label" for="checkbox-7"></label>
+                                <p>SeaDoo GTR 230</p>
+                            </div>
+                        </div>
+                        <button class="hydcrocycle__type-more">Показать еще</button>
+                    </div>
+                    <div class="hydcrocycle__type-block __btns">
+                        <div class="hydrocycle__type-row __btns">
+                            <div class="hydrocycle__type-title">Акции</div>
+                            <div class="hydrocycle__type-column __btns">
+                                <span class="hydrocycle__btn __sale">sale</span>
+                                <span class="hydrocycle__btn __new">NEW</span>
+                                <span class="hydrocycle__btn __hit">HIT</span>
+                                <span class="hydrocycle__btn __diler">ДИЛЕР</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hydcrocycle__type-block __checkbox">
+                        <div class="hydrocycle__type-title"><i class="fa fa-chevron-up"></i>Страны</div>
+                        <div class="hydrocycle__type-column __checkbox">
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-russia" />
+                                <label class="checkbox-label" for="checkbox-russia"></label>
+                                <p>Россия</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-germany" />
+                                <label class="checkbox-label" for="checkbox-germany"></label>
+                                <p>Германия</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-china" />
+                                <label class="checkbox-label" for="checkbox-china"></label>
+                                <p>Китай</p>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" id="checkbox-usa" />
+                                <label class="checkbox-label" for="checkbox-usa"></label>
+                                <p>CША</p>
+                            </div>
+                        </div>
+                        <button class="hydcrocycle__type-more">Показать еще</button>
+                    </div>
+                    <div class="hydcrocycle__item">
+                        <div class="hydcrocycle__choose">
+                            <button>выбрать</button>
+                        </div>
+                        <div class="hydcrocycle__options">
+                            <button>Дополнительные параметры<i class="fa fa-chevron-down"></i></button>
+                        </div>
+                        <div class="hydcrocycle__reset">
+                            <button>Сбросить фильтр</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hydrocycle__products-block">
+                <div class="hydrocycle__products">
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                    @@include("../html/product__column.html", { title: "Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango",
+                    price: "1 049 500", image: "gid-1"})
+                </div>
+                <div class="products__pages">
+                    <span class="__current">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>...</span>
+                    <span>11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
